@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqO-3j-pv9">
+                                <rect key="frame" x="0.0" y="40" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="m1H-Pc-XWW"/>
+                                </constraints>
+                                <state key="normal" title="插入数据"/>
+                                <connections>
+                                    <action selector="insertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCE-UL-JGP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-sB-iWz">
+                                <rect key="frame" x="0.0" y="94" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6fW-o8-iYy"/>
+                                </constraints>
+                                <state key="normal" title="查询数据"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lc-Fp-cht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3n-gf-cbI">
+                                <rect key="frame" x="0.0" y="148" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ybS-zw-Yc7"/>
+                                </constraints>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFV-nP-4YK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-eS-ydX">
+                                <rect key="frame" x="0.0" y="256" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dW5-BB-oJf"/>
+                                </constraints>
+                                <state key="normal" title="删除tb_student表"/>
+                                <connections>
+                                    <action selector="dropAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jp4-vg-1Eq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNI-5m-cpK">
+                                <rect key="frame" x="0.0" y="202" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="12t-85-M51"/>
+                                </constraints>
+                                <state key="normal" title="创建tb_student表"/>
+                                <connections>
+                                    <action selector="createAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9KV-tA-Ye6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uIG-sB-iWz" firstAttribute="top" secondItem="iqO-3j-pv9" secondAttribute="bottom" constant="10" id="1Hi-s9-wqK"/>
+                            <constraint firstItem="dYT-eS-ydX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Kb-rz-rqF"/>
+                            <constraint firstItem="iqO-3j-pv9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5I5-MA-P9Z"/>
+                            <constraint firstItem="uIG-sB-iWz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AVL-o7-6qo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNI-5m-cpK" secondAttribute="trailing" id="Crj-AR-Y91"/>
+                            <constraint firstItem="JNI-5m-cpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Djg-Oh-yKb"/>
+                            <constraint firstItem="dYT-eS-ydX" firstAttribute="top" secondItem="JNI-5m-cpK" secondAttribute="bottom" constant="10" id="H69-pI-MKq"/>
+                            <constraint firstItem="iqO-3j-pv9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JcO-J6-6xO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W3n-gf-cbI" secondAttribute="trailing" id="TrF-y0-w5x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iqO-3j-pv9" secondAttribute="trailing" id="bsQ-Tp-vX3"/>
+                            <constraint firstItem="W3n-gf-cbI" firstAttribute="top" secondItem="uIG-sB-iWz" secondAttribute="bottom" constant="10" id="dUN-lk-vOw"/>
+                            <constraint firstItem="JNI-5m-cpK" firstAttribute="top" secondItem="W3n-gf-cbI" secondAttribute="bottom" constant="10" id="iI9-qE-223"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIG-sB-iWz" secondAttribute="trailing" id="nAx-1y-IKx"/>
+                            <constraint firstItem="W3n-gf-cbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tZI-va-FHN"/>
+                            <constraint firstItem="dYT-eS-ydX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wus-iU-yrM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
