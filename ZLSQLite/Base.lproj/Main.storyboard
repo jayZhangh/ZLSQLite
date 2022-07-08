@@ -19,79 +19,93 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqO-3j-pv9">
-                                <rect key="frame" x="0.0" y="40" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="m1H-Pc-XWW"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="138" width="320" height="44"/>
                                 <state key="normal" title="插入数据"/>
                                 <connections>
                                     <action selector="insertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCE-UL-JGP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-sB-iWz">
-                                <rect key="frame" x="0.0" y="94" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="6fW-o8-iYy"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="192" width="320" height="44"/>
                                 <state key="normal" title="查询数据"/>
                                 <connections>
                                     <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lc-Fp-cht"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3n-gf-cbI">
-                                <rect key="frame" x="0.0" y="148" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="ybS-zw-Yc7"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="246" width="320" height="44"/>
                                 <state key="normal" title="删除数据"/>
                                 <connections>
                                     <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFV-nP-4YK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-eS-ydX">
-                                <rect key="frame" x="0.0" y="256" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="dW5-BB-oJf"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="84" width="320" height="44"/>
                                 <state key="normal" title="删除tb_student表"/>
                                 <connections>
                                     <action selector="dropAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jp4-vg-1Eq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNI-5m-cpK">
-                                <rect key="frame" x="0.0" y="202" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="30" width="320" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="12t-85-M51"/>
+                                    <constraint firstAttribute="height" constant="44" id="5wh-aT-dRw"/>
                                 </constraints>
                                 <state key="normal" title="创建tb_student表"/>
                                 <connections>
                                     <action selector="createAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9KV-tA-Ye6"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ab7-kS-pId">
+                                <rect key="frame" x="10" y="354" width="300" height="204"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s5-el-xnd">
+                                <rect key="frame" x="0.0" y="300" width="320" height="44"/>
+                                <state key="normal" title="删除数据库文件"/>
+                                <connections>
+                                    <action selector="removeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDH-Kw-naK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uIG-sB-iWz" firstAttribute="top" secondItem="iqO-3j-pv9" secondAttribute="bottom" constant="10" id="1Hi-s9-wqK"/>
-                            <constraint firstItem="dYT-eS-ydX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Kb-rz-rqF"/>
-                            <constraint firstItem="iqO-3j-pv9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5I5-MA-P9Z"/>
-                            <constraint firstItem="uIG-sB-iWz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AVL-o7-6qo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNI-5m-cpK" secondAttribute="trailing" id="Crj-AR-Y91"/>
-                            <constraint firstItem="JNI-5m-cpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Djg-Oh-yKb"/>
-                            <constraint firstItem="dYT-eS-ydX" firstAttribute="top" secondItem="JNI-5m-cpK" secondAttribute="bottom" constant="10" id="H69-pI-MKq"/>
-                            <constraint firstItem="iqO-3j-pv9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JcO-J6-6xO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W3n-gf-cbI" secondAttribute="trailing" id="TrF-y0-w5x"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iqO-3j-pv9" secondAttribute="trailing" id="bsQ-Tp-vX3"/>
-                            <constraint firstItem="W3n-gf-cbI" firstAttribute="top" secondItem="uIG-sB-iWz" secondAttribute="bottom" constant="10" id="dUN-lk-vOw"/>
-                            <constraint firstItem="JNI-5m-cpK" firstAttribute="top" secondItem="W3n-gf-cbI" secondAttribute="bottom" constant="10" id="iI9-qE-223"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIG-sB-iWz" secondAttribute="trailing" id="nAx-1y-IKx"/>
-                            <constraint firstItem="W3n-gf-cbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tZI-va-FHN"/>
-                            <constraint firstItem="dYT-eS-ydX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wus-iU-yrM"/>
+                            <constraint firstItem="iqO-3j-pv9" firstAttribute="leading" secondItem="JNI-5m-cpK" secondAttribute="leading" id="0n1-0S-DyZ"/>
+                            <constraint firstItem="uIG-sB-iWz" firstAttribute="leading" secondItem="JNI-5m-cpK" secondAttribute="leading" id="1Ia-bN-XA0"/>
+                            <constraint firstItem="uIG-sB-iWz" firstAttribute="trailing" secondItem="JNI-5m-cpK" secondAttribute="trailing" id="1ga-1t-YRY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ab7-kS-pId" secondAttribute="bottom" constant="10" id="3Bp-Zj-vvg"/>
+                            <constraint firstItem="7s5-el-xnd" firstAttribute="height" secondItem="W3n-gf-cbI" secondAttribute="height" id="64j-bp-a5f"/>
+                            <constraint firstAttribute="trailing" secondItem="ab7-kS-pId" secondAttribute="trailing" constant="10" id="7dp-VB-z8O"/>
+                            <constraint firstItem="ab7-kS-pId" firstAttribute="top" secondItem="7s5-el-xnd" secondAttribute="bottom" constant="10" id="8g6-XO-KOy"/>
+                            <constraint firstItem="JNI-5m-cpK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="FXb-KO-aby"/>
+                            <constraint firstItem="iqO-3j-pv9" firstAttribute="top" secondItem="dYT-eS-ydX" secondAttribute="bottom" constant="10" id="Jjt-xM-FdK"/>
+                            <constraint firstItem="7s5-el-xnd" firstAttribute="leading" secondItem="W3n-gf-cbI" secondAttribute="leading" id="KRB-sK-B54"/>
+                            <constraint firstItem="uIG-sB-iWz" firstAttribute="height" secondItem="JNI-5m-cpK" secondAttribute="height" id="LhI-wS-rcr"/>
+                            <constraint firstItem="W3n-gf-cbI" firstAttribute="height" secondItem="JNI-5m-cpK" secondAttribute="height" id="Lpy-3y-dI7"/>
+                            <constraint firstItem="W3n-gf-cbI" firstAttribute="top" secondItem="uIG-sB-iWz" secondAttribute="bottom" constant="10" id="NC1-LA-jly"/>
+                            <constraint firstItem="ab7-kS-pId" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QKZ-Vx-zde"/>
+                            <constraint firstItem="7s5-el-xnd" firstAttribute="top" secondItem="W3n-gf-cbI" secondAttribute="bottom" constant="10" id="Zlz-oo-SNa"/>
+                            <constraint firstItem="iqO-3j-pv9" firstAttribute="trailing" secondItem="JNI-5m-cpK" secondAttribute="trailing" id="buv-ef-2ig"/>
+                            <constraint firstItem="JNI-5m-cpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="epx-Z1-Yuf"/>
+                            <constraint firstItem="dYT-eS-ydX" firstAttribute="top" secondItem="JNI-5m-cpK" secondAttribute="bottom" constant="10" id="gDn-Nl-hvc"/>
+                            <constraint firstItem="W3n-gf-cbI" firstAttribute="trailing" secondItem="JNI-5m-cpK" secondAttribute="trailing" id="gEt-IQ-V1s"/>
+                            <constraint firstItem="W3n-gf-cbI" firstAttribute="leading" secondItem="JNI-5m-cpK" secondAttribute="leading" id="hOE-tc-Pdx"/>
+                            <constraint firstItem="dYT-eS-ydX" firstAttribute="trailing" secondItem="JNI-5m-cpK" secondAttribute="trailing" id="iVb-2H-6bg"/>
+                            <constraint firstItem="uIG-sB-iWz" firstAttribute="top" secondItem="iqO-3j-pv9" secondAttribute="bottom" constant="10" id="lih-ap-nqe"/>
+                            <constraint firstItem="7s5-el-xnd" firstAttribute="trailing" secondItem="W3n-gf-cbI" secondAttribute="trailing" id="rhF-JM-Ijb"/>
+                            <constraint firstItem="JNI-5m-cpK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sFz-tJ-7bn"/>
+                            <constraint firstItem="dYT-eS-ydX" firstAttribute="leading" secondItem="JNI-5m-cpK" secondAttribute="leading" id="uAZ-dI-qj6"/>
+                            <constraint firstItem="iqO-3j-pv9" firstAttribute="height" secondItem="JNI-5m-cpK" secondAttribute="height" id="voR-IW-DAt"/>
+                            <constraint firstItem="dYT-eS-ydX" firstAttribute="height" secondItem="JNI-5m-cpK" secondAttribute="height" id="zg1-q1-Hdd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="stuImv" destination="ab7-kS-pId" id="aBi-fG-HgZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="129.375" y="106.69014084507042"/>
         </scene>
     </scenes>
 </document>
