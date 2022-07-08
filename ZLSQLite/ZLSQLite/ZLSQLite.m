@@ -11,9 +11,10 @@
 #define SQLiteDBName @"ZLSQLite_2022_01_01.db"
 #define SQLiteDBFile [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:SQLiteDBName]
 
-static sqlite3 *_sqlite_db;
-
 @interface ZLSQLite ()
+{
+    sqlite3 *_sqlite_db;
+}
 
 @end
 
